@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-const mongoURI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/mern-docker';
+const mongoURI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/mern-docker-deploy';
 mongoose.connect(mongoURI)
   .then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.log(err));
